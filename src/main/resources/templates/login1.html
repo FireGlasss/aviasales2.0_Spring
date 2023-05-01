@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AviaSales</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="icon"
+          href="https://thumbs.dreamstime.com/b/%D0%BF%D1%80%D0%BE%D1%81%D1%82%D0%BE%D0%B9-%D0%B7%D0%BD%D0%B0%D1%87%D0%BE%D0%BA-%D1%81%D0%B0%D0%BC%D0%BE%D0%BB%D0%B5%D1%82%D0%B0-119742862.jpg">
+    <link href="../static/css/style.css" th:href="@{/css/style.css}" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img
+                        src="images/kisspng-airplane-aircraft-logo-clip-art-airplane-silhouette-5a89d01f89f093.455859521518981151565.jpg"
+                        alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Выбрать полет</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="addpolet.html">Добавить полет</a>
+                        </li>
+                        <div class="lg-button">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="login.html">Зарегистрироваться/Войти</a>
+                            </li>
+                        </div>
+
+
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <section>
+        <form action="#" th:action="@{/login-user}" th:object="${user}" method="post">
+        <div class="p-3 mb-2 text-white">
+            <div class="container-fluid">
+                <div class="log_in">
+                    <p class="main-active">Войти:</p>
+                    <P>Почта: <input type="email" th:field="*{email}" name="myInput" placeholder="your@email.com" size="30" required></P>
+                    <P>Пароль: <input type="password" th:field="*{password}" name="myInput" placeholder="12345678" size="30" required></P>
+                    <a href="#"><input type="submit" name="myInput" value="Войти"></a>
+                    <a href="signUp.html"><input type="submit" name="myInput" value="Зарегистрироваться"></a>
+
+
+                </div>
+            </div>
+        </div>
+        </div>
+    </form>
+    </section>
+
+    <footer>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

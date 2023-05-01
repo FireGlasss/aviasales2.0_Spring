@@ -1,0 +1,38 @@
+/* Общее */
+body {
+    background: linear-gradient(330deg, #FFFFFF 0%, #00BAF9 100%);
+    background: #fff url(https://i.artfile.ru/1920x1080_859741_[www.ArtFile.ru].jpg) center center/cover no-repeat;
+    min-height: 100vh;
+}
+
+/* Навигационная панель */
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(255, 255, 255)
+}
+.navbar-light .navbar-nav .nav-link.active {
+    color: rgb(188, 191, 193);
+}
+.navbar-brand>img{
+    width: 50px;
+}
+.navbar-toggler {
+    background-color: gray;
+}
+.navbar {
+    background-color: rgba(70, 70, 229, 0.662);
+}
+.lg-button {
+    
+}
+/* Текст логин */
+.main-active {
+   font-size: 30px;
+}
+
+/* Добавление полета */
+.polet {
+    font-size: 20px;
+}
+.add_points {
+    display: inline-block;
+}
